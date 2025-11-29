@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel = "stylesheet" href = "style.css">
+    <title> Snake Game </title>    
+    </head>
+    <body>
+        <div id="score-label">Score: <span id = "scoreValue"> 0</span>
+         </div>
+    <div id="game-container">
+     <video class ="video"><source src="Cat.mp4"></video>
+     <video class = "video"><source src="Lamb.mp4"></video>
+
+    <canvas id="game" width="500" height="500"></canvas>
+
+    <div id="start-screen" class="ui-screen">
+        <h1>Snake Game</h1>
+        <button id="startButton">Start Game</button>
+    </div>
+
+<div id="mode-screen" class = "ui-screen" style="display: none;">
+    <h2>Select Mode</h2>
+    <button class="modeBtn" data-mode="normal">Normal Mode</button>
+    <button class="modeBtn" data-mode="puzzle">Puzzle Mode</button>
+    <button class="modeBtn" data-mode="wave">Wave Mode</button>
+</div>
+    <div id="gameover-screen" class="ui-screen">
+        <h2>Game Over</h2>
+        <button id="replayButton">Replay</button>
+    </div>
+
+    <div id="win-screen" class="ui-screen">
+        <h2>You Win!</h2>
+        <button id="winReplayButton">Play Again</button>
+    </div>
+    <div id ="warning-screen" class = "ui-screen" style="display: none;">
+        <h2>WARNING</h2>
+    <p1> Warning: this mode has been identified by epilepsy action
+        to potentially trigger seizures for people with photosensitive epilepsy.
+    </p1>    
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+      
+        <br>
+        <p1> Hello, my name is Jason. This is my first game I've developed by myself, 
+            if it wasn't one of those basic, rudimentary, no coding games I made on roblox.
+        </p1>
+    </body>
+</html>
